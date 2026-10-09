@@ -24,8 +24,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourname/beastlink"
-Repository = "https://github.com/yourname/beastlink"
+Homepage = "https://github.com/vampirejjjadev/beastlink.git"
+Repository = "https://github.com/vampirejjjadev/beastlink.git"
 
 [tool.setuptools.packages.find]
 include = ["beastlink*"]
