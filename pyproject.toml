@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beastlink"
+version = "0.1.1"
+description = "A self-contained music plugin for Python Discord bots."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "VampireDev" }]
+keywords = ["discord", "music", "yt-dlp", "audio", "voice"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "discord.py>=2.3.0",
+    "yt-dlp>=2024.1.0",
+    "PyNaCl>=1.5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/vampirejjjadev/beastlink"
+Repository = "https://github.com/vampirejjjadev/beastlink"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["beastlink*"]
