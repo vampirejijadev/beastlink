@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beastlink"
+version = "0.2.2"
+description = "Self-contained music plugin for Python Discord bots. No Lavalink, no Java."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "VampireDev", url = "https://github.com/vampirejjjadev" }
+]
+keywords = ["discord", "music", "bot", "lavalink", "yt-dlp", "ffmpeg", "audio"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "discord.py>=2.3.0",
+    "yt-dlp>=2024.1.1",
+    "yt-dlp-ejs",
+    "PyNaCl>=1.5.0",
+    "aiohttp>=3.9.0",
+    "python-dotenv>=1.0.0",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "ruff>=0.1.0",
+    "build>=1.0",
+    "twine>=5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/vampirejjjadev/beastlink"
+Repository = "https://github.com/vampirejjjadev/beastlink"
+Issues = "https://github.com/vampirejjjadev/beastlink/issues"
+Changelog = "https://github.com/vampirejjjadev/beastlink/blob/main/CHANGELOG.md"
+Discord = "https://discord.gg/jwo"
+
+[tool.setuptools.packages.find]
+include = ["beastlink*"]
+exclude = ["clients*", "examples*", "beastlink-node*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
