@@ -1,0 +1,24 @@
+# Beastlink Node Configuration
+# Copy this file to beastlink.yml and edit as needed.
+
+server:
+  host: "0.0.0.0"
+  port: 2333
+  password: "youshallnotpass"
+
+cookies:
+  path: "cookies/cookies.txt"
+  from_browser: ""
+
+ytdlp:
+  js_runtime: "node"
+  extra_args: ""
+
+logging:
+  level: "INFO"
+  file: "logs/beastlink.log"
+
+audio:
+  buffer_size: 1048576
+  sample_rate: 48000
+  channels: 2
