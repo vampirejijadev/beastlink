@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discord Community
+    url: https://discord.gg/jwo
+    about: Get help from the community and the maintainer
+  - name: 📖 Documentation
+    url: https://github.com/vampirejjjadev/beastlink#readme
+    about: Read the setup guide and configuration reference
+  - name: 🔒 Report a Security Issue
+    url: https://github.com/vampirejjjadev/beastlink/security/advisories/new
+    about: Report vulnerabilities privately
